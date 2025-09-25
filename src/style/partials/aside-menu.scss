@@ -1,0 +1,82 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.aside-menu{
+  position: fixed;
+  height: 0;
+  top: 36px;
+  left: 3.3vw;
+  z-index: 3;
+
+  @include media.media-breakpoint-down-equal(lg){
+    left: 1.8vw;
+  }
+
+  @include media.media-breakpoint-down-equal(sm){
+    display: none;
+  }
+
+  &__wrapper{
+    color: variables.$color-aside-text;
+    font-size: 12px;
+    font-weight: variables.$font-weight-medium;
+    letter-spacing: 0.69em;
+    text-transform: uppercase;
+
+    @include media.media-breakpoint-down-equal(lg){
+      font-size: 10px;
+    }
+  }
+
+  &__text{
+    position: relative;
+    transform: rotate(-90deg);
+    margin: 27.68vh 0 0 -130px;
+
+    @include media.media-breakpoint-down-equal(lg){
+      margin-left: -100px;
+    }
+
+    @include media.media-breakpoint-down-equal(md){
+      display: none;
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 380px;
+      width: 14.26vh;
+      height: 1px;
+      background-color: variables.$color-border5;
+      pointer-events: none;
+
+      @include media.media-breakpoint-down-equal(lg){
+        display: none;
+      }
+    }
+  }
+
+  &__social-list{
+    position: absolute;
+    top: 70.74vh;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.43vh;
+
+    @include media.media-breakpoint-down-equal(md){
+      top: 10vh;
+    }
+
+    li{
+      @include media.media-breakpoint-up(md){
+        &:hover{
+          filter: invert(50%);
+        }
+      }
+    }
+  }
+}

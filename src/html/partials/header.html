@@ -1,0 +1,48 @@
+<header class="header">
+  <div class="header__wrapper">
+    <div class="header__inner">
+      <div class="header__container">
+        <a class="header__logo"
+           href="">
+          {{> img-format
+          basePath='img/header/home'
+          imgType='png'
+          alt='icon-home'
+          }}
+        </a>
+
+        <div class="header__burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <a class="header__phone-link"
+      href="tel:'+380971234567'">
+        +38 (097) 123 45 67
+      </a>
+    </div>
+
+    <div class="header__inner">
+      <button class="header__btn"
+      data-btn="request">
+        request for a call
+      </button>
+
+      <button class="header__phone"
+              data-btn="request">
+        <span class="header__phone-pulse"></span>
+
+        <span class="header__phone-pulse"></span>
+
+        <span class="header__phone-pulse"></span>
+
+        {{> svg-manager
+        id="icon-call" class="header__phone-icon" width="14px" height="13px"}}
+      </button>
+    </div>
+  </div>
+
+  <hr>
+</header>

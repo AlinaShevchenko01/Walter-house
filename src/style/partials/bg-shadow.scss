@@ -1,0 +1,12 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.bg-shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: variables.$color-bg1;
+  pointer-events: none;
+}

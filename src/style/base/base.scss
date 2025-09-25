@@ -1,0 +1,45 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: variables.$first-font-family;
+  color: variables.$color-main-text;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a{
+  font-size: 16px;
+  text-decoration: none;
+  color: variables.$color-main-text;
+  cursor: pointer;
+}
+
+button{
+  font-size: 16px;
+  font-family: variables.$first-font-family;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: variables.$fourth-font-family;
+  font-weight: variables.$font-weight-regular;
+  font-size: 96px;
+  line-height: 0.94;
+  text-transform: uppercase;
+
+  @include media.media-breakpoint-down-equal(xs){
+    font-size: 46px;
+
+  }
+}

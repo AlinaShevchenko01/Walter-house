@@ -1,0 +1,177 @@
+@use "@/style/utils/keyframes" as keyframes;
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  &__wrapper{
+    max-width: 93.4vw;
+    @include mixins.flex-between-center;
+    gap: 32px;
+    padding: 38px 0 26px;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(lg){
+      max-width: 96vw;
+    }
+
+    @include media.media-breakpoint-down-equal(md){
+      max-width: 97vw;
+      padding: 1.8vh 0 2.66vh;
+    }
+
+    @include media.media-breakpoint-down-equal(xs){
+      max-width: 99vw;
+      padding: 13px 0;
+    }
+  }
+
+  &__inner{
+    flex: 1 1 20%;
+    max-width: 446px;
+    @include mixins.flex-between;
+    gap: 16px;
+
+    &:last-of-type{
+      max-width: 296px;
+      margin: -8px 8.75vw 0 0;
+
+      @include media.media-breakpoint-down-equal(md){
+        max-width: 282px;
+        margin: 10px 3.4vw 0 0;
+      }
+
+      @include media.media-breakpoint-down-equal(xs){
+        max-width: 60px;
+      }
+    }
+  }
+
+  &__container{
+    flex: 1 1 120px;
+    max-width: 144px;
+    @include mixins.flex-between;
+    gap: 16px;
+
+    @include media.media-breakpoint-down-equal(md){
+      max-width: 134px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs){
+      max-width: 118px;
+    }
+  }
+
+  &__logo{
+    cursor: pointer;
+  }
+
+  &__burger-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-top: 14px;
+
+    @include media.media-breakpoint-down-equal(md){
+      margin-top: 23px;
+    }
+
+    @include media.media-breakpoint-down-equal(xs){
+      margin-top: 20px;
+    }
+
+    span{
+      background-color: variables.$color-main-text;
+      height: 2px;
+
+
+      &:nth-child(1){
+        width: 25px;
+      }
+
+      &:nth-child(2){
+        width: 13px;
+      }
+
+      &:nth-child(3){
+        width: 30px;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  &__phone-link{
+    font-weight: variables.$font-weight-medium;
+    letter-spacing: 0.1em;
+    margin-top: 13px;
+
+    @include media.media-breakpoint-down-equal(md){
+      display: none;
+    }
+  }
+
+  &__btn{
+    font-weight: variables.$font-weight-semibold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: variables.$color-text-light;
+
+    @include media.media-breakpoint-down-equal(xs){
+      display: none;
+    }
+  }
+
+  &__phone{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: variables.$color-border4;
+    overflow: visible;
+  }
+
+  &__phone-pulse{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border: 1px solid variables.$color-border4;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: pulse 2s infinite;
+    z-index: 0;
+
+    &:nth-child(1){
+      animation-delay: 0s;
+    }
+
+    &:nth-child(2){
+      animation-delay: 0.7s;
+    }
+
+    &:nth-child(3){
+      animation-delay: 1.4s;
+    }
+  }
+
+  &__phone-icon{
+    animation: phone-ring 2s infinite;
+  }
+
+  hr{
+    width: 81vw;
+    background-color: variables.$color-bg1;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(sm){
+      width: 100vw;
+    }
+  }
+}

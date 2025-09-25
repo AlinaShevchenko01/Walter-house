@@ -1,0 +1,20 @@
+<picture class="{{pictureClass}}">
+    {{#each sizes}}
+    <source
+            type="image/webp"
+            media="{{lookup ../mediaQueries @index}}"
+            srcset="{{../basePath}}-{{this}}.webp" />
+    {{/each}}
+
+    {{#each sizes}}
+    <source
+            type="image/{{../imgType}}"
+            media="{{lookup ../mediaQueries @index}}"
+            srcset="{{../basePath}}-{{this}}.{{../imgType}}" />
+    {{/each}}
+
+    <img
+            src="{{basePath}}-{{lastSize}}.{{imgType}}"
+            alt="{{alt}}"
+            loading="{{#if loading}}{{loading}}{{else}}lazy{{/if}}" />
+</picture>

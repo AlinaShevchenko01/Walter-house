@@ -1,0 +1,41 @@
+<section class="screen1">
+  <div class="screen1__bg swiper-main__bg">
+    {{> img-media
+    pictureClass='screen1__bg-img'
+    basePath='img/screen1/screen1-photo1'
+    sizes=(array 375 575 768 1440 1920)
+    mediaQueries=(array '(max-width: 375px)' '(max-width: 575px)' '(max-width: 768px)' '(max-width: 1440px)' '(min-width: 1441px)')
+    lastSize=1440
+    imgType='png'
+    alt='room example - hall'
+    }}
+
+    <div class="screen1__bg-shadow bg-shadow"></div>
+  </div>
+
+  <div class="screen1__wrapper">
+    <div class="screen1__text-mobile">
+      ремонт квартир под ключ
+    </div>
+
+    <div class="screen1__inner">
+      <h1 class="screen1__title">
+        <span>
+          walter
+        </span>
+
+        <span>
+          House
+        </span>
+      </h1>
+
+      <p class="screen1__subtitle">
+        your personal
+      </p>
+    </div>
+
+    {{> form
+    class='screen1__form'}}
+  </div>
+
+</section>

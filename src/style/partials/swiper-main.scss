@@ -1,0 +1,63 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.swiper-main{
+  width: 100%;
+  height: 100vh;
+
+  &__bg{
+    position: relative;
+
+    img{
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  &__slide_full{
+    @include media.media-breakpoint-down-equal(md){
+      display: none;
+    }
+  }
+
+  &__pagination{
+    position: fixed;
+    top: 35.18vh;
+    right: 6vw;
+    @include mixins.flex-column;
+    gap: 11px;
+    z-index: 3;
+
+    @include media.media-breakpoint-down-equal(md){
+      display: none;
+    }
+
+  }
+
+  &__pagination-btn{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+  }
+
+  &__pagination-dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: variables.$color-border2;
+  }
+
+  &__pagination-btn.swiper-pagination-bullet-active{
+    border: 1px solid variables.$color-border2;
+
+    .swiper-main__pagination-dot{
+      background-color: variables.$color-text-light;
+    }
+  }
+}

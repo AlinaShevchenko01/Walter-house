@@ -1,0 +1,120 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.form-call{
+  width: 38.54vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: variables.$color-main-text;
+
+  @include media.media-breakpoint-down-equal(md){
+    width: 100vw;
+    height: 41vh;
+    position: static;
+
+    @include media.media-breakpoint-down-equal(xxs){
+      height: 33.33vh;
+    }
+  }
+
+  &__wrapper{
+    @include mixins.flex-column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 10.74vh 6.2vw 8.15vh;
+    margin: 0 auto;
+
+    @include media.media-breakpoint-down-equal(sm){
+      gap: 1.63vh;
+      padding: 12.5vh 13vw 9.82vh 16.14vw;
+    }
+
+    @include media.media-breakpoint-down-equal(xs){
+      padding: 8vh 40px 6.94vh;
+    }
+
+    @include media.media-breakpoint-down-equal(xxs){
+      gap: 0;
+      padding: 7.7vh 40px 6.94vh;
+    }
+  }
+
+  &__group{
+    position: relative;
+    width: 100%;
+
+    &:last-of-type{
+      label{
+        top: -16px;
+
+        @include media.media-breakpoint-down-equal(xxs){
+          top: -2px;
+        }
+      }
+    }
+
+    &:focus-within label,
+    input:not(:placeholder-shown) + label{
+      transform: translateY(-10px);
+      font-size: 16px;
+
+      @include media.media-breakpoint-down-equal(xxs){
+        font-size: 10px;
+      }
+    }
+  }
+
+  label{
+    position: absolute;
+    top: -11px;
+    left: 0;
+    font-size: 18px;
+    color: variables.$color-text-dark;
+    transition: transform 0.4s ease;
+    pointer-events: none;
+
+    @include media.media-breakpoint-down-equal(xxs){
+      top: -2px;
+      font-size: 14px;
+    }
+  }
+
+  input{
+    width: 100%;
+    font-family: variables.$first-font-family;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid variables.$color-border1;
+    cursor: text;
+    margin-bottom: 3.52vh;
+
+    @include media.media-breakpoint-down-equal(sm){
+      margin-bottom: 4.3vh;
+    }
+
+    @include media.media-breakpoint-down-equal(xxs){
+      margin-bottom: 3.7vh;
+    }
+  }
+
+  &__btn{
+    margin-top: -8px;
+
+    @include media.media-breakpoint-down-equal(xs){
+
+    }
+  }
+
+  &__error{
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    color: variables.$color-error;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

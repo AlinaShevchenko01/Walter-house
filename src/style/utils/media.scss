@@ -1,0 +1,73 @@
+@use "sass:map";
+
+$breakpoints: (
+        uxs: 320px,
+        xxs: 375px,
+        xs: 575px,
+        sm: 768px,
+        md: 1024px,
+        lg: 1440px,
+        l: 1600px,
+        xl: 1920px,
+);
+
+@mixin media-breakpoint-up($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint);
+
+    @media (min-width: $breakpoint-value+1) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin media-breakpoint-up-equal($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint);
+
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint);
+
+    @media (max-width: $breakpoint-value - 1) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin media-breakpoint-down-equal($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint);
+
+    @media (max-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin media-between-breakpoints($min-bp, $max-bp) {
+  @if map.has-key($breakpoints, $min-bp) and map.has-key($breakpoints, $max-bp) {
+    $min: map.get($breakpoints, $min-bp);
+    $max: map.get($breakpoints, $max-bp);
+
+    @media (min-width: $min) and (max-width: $max - 1) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoints: #{$min-bp}, #{$max-bp}.';
+  }
+}

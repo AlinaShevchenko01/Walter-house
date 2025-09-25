@@ -1,0 +1,138 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.screen2{
+  position: relative;
+
+  &__bg-shadow{
+    background-color: variables.$color-bg2;
+  }
+
+  &__wrapper{
+    width: 64.7vw;
+    position: absolute;
+    top: 21.3vh;
+    left: 16.76vw;
+    z-index: 2;
+    text-transform: uppercase;
+
+    @include media.media-breakpoint-down-equal(lg){
+      width: 70vw;
+      left: 13vw;
+    }
+  }
+
+  &__text{
+    max-width: 536px;
+    font-family: variables.$third-font-family;
+    font-weight: variables.$font-weight-bold;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    line-height: 1.1;
+    margin: 0 0 10.4vh 19.2vw;
+
+    @include media.media-breakpoint-down-equal(l){
+      margin: 0 auto 10vh;
+    }
+
+    @include media.media-breakpoint-down-equal(lg){
+      font-size: 19px;
+    }
+  }
+
+  &__inner{
+    width: 100%;
+    @include mixins.flex-between;
+    gap: 16px;
+    margin: 0 auto;
+  }
+
+  &__group{
+    max-width: 235px;
+    @include mixins.flex-column;
+    gap: 17px;
+    text-align: center;
+  }
+
+  &__group_center{
+    position: relative;
+    margin-left: -32px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: -42px;
+      left: -7.6vw;
+      height: 250px;
+      width: 2px;
+      background-image: radial-gradient(circle at center, variables.$color-main-text 0%, transparent 100% );
+
+      @include media.media-breakpoint-down-equal(lg){
+        left: -4vw;
+      }
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: -42px;
+      right: -7.39vw;
+      height: 250px;
+      width: 2px;
+      background-image: radial-gradient(circle at center, variables.$color-main-text 0%, transparent 100% );
+
+      @include media.media-breakpoint-down-equal(lg){
+        right: -4vw;
+      }
+    }
+  }
+
+  &__group-number{
+    font-family: variables.$second-font-family;
+    font-size: 64px;
+    line-height: 1.09;
+
+    @include media.media-breakpoint-down-equal(lg){
+      font-size: 56px;
+    }
+  }
+
+  &__group-text{
+    font-size: 30px;
+    line-height: 1.25;
+
+    @include media.media-breakpoint-down-equal(lg){
+      font-size: 26px;
+    }
+  }
+
+  &__btn{
+    position: absolute;
+    z-index: 2;
+    bottom: 8.52vh;
+    left: 20.46vw;
+
+    span{
+      &:nth-child(2){
+        width: 5vw;
+        top: 10px;
+        right: -6.2vw;
+      }
+
+      &:nth-child(3){
+        top: 5px;
+
+        right: -7.2vw;
+      }
+
+      &:nth-child(4){
+        top: 16px;
+
+        right: -7.2vw;
+      }
+    }
+  }
+
+}

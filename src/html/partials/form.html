@@ -1,0 +1,33 @@
+<form class="form-call {{class}}">
+  <div class="form-call__wrapper">
+    <div class="form-call__group">
+      <input id="name"
+             type="text"
+             placeholder=" ">
+
+      <label for="name">
+        Your name
+      </label>
+
+      <span class="form-call__error">
+    Заполните, пожалуйста, это поле.
+    </span>
+    </div>
+
+    <div class="form-call__group">
+      <input id="phone"
+             type="tel"
+             placeholder=" ">
+
+      <label for="phone">
+        Your phone number
+      </label>
+
+      <span class="form-call__error">
+    Заполните, пожалуйста, это поле.
+    </span>
+    </div>
+
+    {{> main-btn class='form-call__btn'  text='discuss a project'}}
+  </div>
+</form>

@@ -1,0 +1,11 @@
+<picture class="{{pictureClass}}">
+    {{#if isWebp}}
+    <source type="image/webp" srcset="{{basePath}}.webp">
+    {{/if}}
+
+    <source type="image/{{imgType}}" srcset="{{basePath}}.{{imgType}}">
+
+    <img src="{{basePath}}.{{imgType}}"
+         alt="{{alt}}"
+         loading="{{#if loading}}{{loading}}{{else}}lazy{{/if}}"/>
+</picture>

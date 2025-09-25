@@ -1,0 +1,139 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.screen1{
+
+  @include media.media-breakpoint-down-equal(sm){
+    height: 100vh;
+  }
+
+  &__bg{
+
+    img{
+      @include media.media-breakpoint-down-equal(md){
+        height: 59vh;
+      }
+
+      @include media.media-breakpoint-down-equal(xxs){
+        height: 66.67vh;
+      }
+    }
+  }
+
+  &__wrapper{
+    z-index: 2;
+  }
+
+  &__text-mobile{
+    display: none;
+
+    @include media.media-breakpoint-down-equal(sm){
+      display: block;
+      position: absolute;
+      top: 14.14vh;
+      left: 26.6vw;
+      font-family: variables.$third-font-family;
+      font-weight: variables.$font-weight-medium;
+      font-size: 12px;
+      letter-spacing: 0.69em;
+      text-transform: uppercase;
+      color: variables.$color-aside-text;
+    }
+
+    @include media.media-breakpoint-down-equal(xs){
+      max-width: 85.94vw;
+      text-align: center;
+      left: 10vw;
+    }
+
+    @include media.media-breakpoint-down-equal(xxs){
+      top: 14.5vh;
+      left: 7.4vw;
+    }
+  }
+
+  &__inner{
+    position: absolute;
+    top: 33.6vh;
+    left: 16.56vw;
+    width: 618px;
+
+    @include media.media-breakpoint-down-equal(lg){
+      top: 28.6vh;
+      left: 14.56vw;
+    }
+
+    @include media.media-breakpoint-down-equal(md){
+      top: 23vh;
+      left: 13vw;
+    }
+
+    @include media.media-breakpoint-down-equal(sm){
+      width: 81vw;
+      top: 24.1vh;
+      left: 5.5vw;
+    }
+
+    @include media.media-breakpoint-down-equal(xs){
+      top: 22vh;
+      left: 10vw;
+    }
+
+    @include media.media-breakpoint-down-equal(xxs){
+      width: 93.3vw;
+      top: 27vh;
+      left: 1.8vw;
+    }
+  }
+
+  &__title{
+    @include mixins.flex-column;
+    gap: 18px;
+
+    @include media.media-breakpoint-down-equal(xs){
+      gap: 8px;
+    }
+
+    span{
+      &:first-of-type{
+        text-shadow:
+                -1px -1px 0 variables.$color-text-dark,
+                1px -1px 0 variables.$color-text-dark,
+                -1px  1px 0 variables.$color-text-dark,
+                1px  1px 0 variables.$color-text-dark;
+
+        @include media.media-breakpoint-down-equal(sm){
+          letter-spacing: 0.02em;
+          text-shadow: none;
+        }
+      }
+      
+      &:last-of-type{
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__subtitle{
+    position: absolute;
+    top: 86px;
+    left: 6px;
+    font-family: variables.$third-font-family;
+    font-weight: variables.$font-weight-regular;
+    font-size: 16px;
+    line-height: 1.72;
+    letter-spacing: 0.52em;
+    text-transform: uppercase;
+
+    @include media.media-breakpoint-down-equal(xs){
+      top: 40px;
+      left: 20px;
+      font-size: 8px;
+    }
+
+    @include media.media-breakpoint-down-equal(xxs){
+      left: 1.8vw;
+    }
+  }
+}

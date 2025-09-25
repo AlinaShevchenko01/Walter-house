@@ -1,0 +1,142 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+.main-btn{
+  position: relative;
+  color: variables.$color-text-light;
+  font-size: 20px;
+  font-weight: variables.$font-weight-semibold;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include media.media-breakpoint-up(md){
+    &:hover{
+      color: variables.$color-text-dark;
+
+      .main-btn__line{
+        background-color: variables.$color-text-dark;
+      }
+    }
+  }
+
+  @include media.media-breakpoint-down-equal(lg){
+    letter-spacing: 0.2em;
+  }
+
+  @include media.media-breakpoint-up(md){
+    letter-spacing: 0.45em;
+  }
+
+  @include media.media-breakpoint-down-equal(xs){
+    font-size: 14px;
+  }
+
+  @include media.media-breakpoint-down-equal(xxs){
+    max-width: 43.75vw;
+    text-align: left;
+  }
+
+  &:active{
+    color: variables.$color-border5;
+  }
+
+  &__line{
+    position: absolute;
+    height: 1px;
+    background-color: variables.$color-text-light;
+    cursor: pointer;
+  }
+
+  span{
+
+    &:nth-child(2){
+      width: 5.2vw;
+      top: 13px;
+      right: -7.29vw;
+
+      @include media.media-breakpoint-down-equal(lg){
+        right: -6vw;
+      }
+
+      @include media.media-breakpoint-down-equal(md){
+        width: 14.72vw;
+        right: -22vw;
+      }
+
+      @include media.media-breakpoint-down-equal(sm){
+        width: 15.63vw;
+        right: -32vw;
+      }
+
+      @include media.media-breakpoint-down-equal(xxs){
+        width: 24.68vw;
+        top: 18px;
+        right: -24.5vw;
+      }
+    }
+
+    &:nth-child(3){
+      width: 18px;
+      transform: rotate(35deg);
+      top: 8px;
+      right: -8.44vw;
+
+      @include media.media-breakpoint-down-equal(lg){
+        right: -7vw;
+      }
+
+      @include media.media-breakpoint-down-equal(md){
+        right: -25vw;
+      }
+
+      @include media.media-breakpoint-down-equal(sm){
+        right: -32vw;
+      }
+
+      @include media.media-breakpoint-down-equal(xxs){
+        transform: rotate(33deg);
+        width: 20px;
+        top: 13px;
+        right: -31.8vw;
+      }
+
+    }
+
+    &:nth-child(4){
+      width: 18px;
+      transform: rotate(-35deg);
+      top: 19px;
+      right: -8.44vw;
+
+      @include media.media-breakpoint-down-equal(lg){
+        right: -7vw;
+      }
+
+      @include media.media-breakpoint-down-equal(md){
+        right: -25vw;
+      }
+
+      @include media.media-breakpoint-down-equal(sm){
+        right: -32vw;
+      }
+
+      @include media.media-breakpoint-down-equal(xxs){
+        width: 20px;
+        transform: rotate(-32deg);
+        right: -31.8vw;
+        top: 23px;
+      }
+    }
+  }
+
+  &.white{
+    color: variables.$color-main-text;
+    font-size: 14px;
+
+    .main-btn__line{
+      background-color: variables.$color-main-text;
+    }
+  }
+}

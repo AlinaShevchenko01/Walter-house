@@ -1,0 +1,59 @@
+<section class="screen2">
+  <div class="screen2__bg swiper-main__bg">
+    {{> img-media
+    pictureClass='screen2__bg-img'
+    basePath='img/screen2/screen2-photo1'
+    sizes=(array 1440 1920)
+    mediaQueries=(array '(max-width: 1440px)' '(min-width: 1441px)')
+    lastSize=1440
+    imgType='png'
+    alt='room example - hall'
+    }}
+
+    <div class="screen2__bg-shadow bg-shadow"></div>
+  </div>
+
+  <div class="screen2__wrapper">
+    <p class="screen2__text">
+      elite renovation of your apartment
+    </p>
+
+    <div class="screen2__inner">
+      <div  class="screen2__group">
+        <p class="screen2__group-number">
+          18
+        </p>
+
+        <p class="screen2__group-text">
+          years <br>
+          on the market
+        </p>
+      </div>
+
+      <div  class="screen2__group screen2__group_center">
+        <p class="screen2__group-number">
+          237
+        </p>
+
+        <p class="screen2__group-text">
+          completed projects
+        </p>
+      </div>
+
+      <div  class="screen2__group">
+        <p class="screen2__group-number">
+          50
+        </p>
+
+        <p class="screen2__group-text">
+          employees
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {{> main-btn class='screen2__btn white'  text='more info about us'}}
+
+  {{> form
+  class='screen2__form'}}
+</section>

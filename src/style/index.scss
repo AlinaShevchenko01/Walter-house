@@ -1,0 +1,28 @@
+@use "@/style/base/reset";
+@use "@/style/base/base";
+
+@use "@/style/utils/keyframes" as keyframes;
+@use "@/style/utils/media" as media;
+@use "@/style/utils/mixins" as mixins;
+@use "@/style/utils/variables" as variables;
+
+@use "@/style/partials/aside-menu";
+@use "@/style/partials/bg-shadow";
+@use "@/style/partials/form";
+@use "@/style/partials/gallery";
+@use "@/style/partials/gallery-dot";
+@use "@/style/partials/gallery-navigation";
+@use "@/style/partials/header";
+@use "@/style/partials/main-btn";
+@use "@/style/partials/menu";
+@use "@/style/partials/swiper-main";
+
+@use "@/style/sections/screen1";
+@use "@/style/sections/screen2";
+@use "@/style/sections/screen3";
+@use "@/style/sections/screen4";
+@use "@/style/sections/screen5";
+@use "@/style/sections/screen6";
+@use "@/style/sections/elite";
+@use "@/style/sections/extra";
+@use "@/style/sections/vip";

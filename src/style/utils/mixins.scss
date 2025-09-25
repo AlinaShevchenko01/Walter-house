@@ -1,0 +1,66 @@
+@use "@/style/utils/media" as media;
+@use "@/style/utils/variables" as variables;
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin section3-hover{
+  flex-grow: 2.08;
+
+  @include media.media-breakpoint-down-equal(md){
+    flex-grow: 3;
+  }
+
+  .screen3__title{
+    color: variables.$color-text-light;
+    transform: translateX(-15.52vw);
+
+    @include media.media-breakpoint-down-equal(lg){
+      transform: translateX(-12.52vw);
+    }
+
+
+    @include media.media-breakpoint-down-equal(md){
+      transform: translateX(-50%) translateY(-16.9vh);
+    }
+  }
+
+  .screen3__title-circle{
+    opacity: 1;
+  }
+
+  .screen3__hover{
+    pointer-events: auto;
+    transform: translateX(0);
+    opacity: 1;
+
+    @include media.media-breakpoint-down-equal(md){
+      transform: translateX(-50%);
+    }
+  }
+}
