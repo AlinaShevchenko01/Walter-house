@@ -13,7 +13,7 @@
   <script type="module" crossorigin src="/Walter-house/js/index.js"></script>
   <link rel="modulepreload" crossorigin href="/Walter-house/assets/vendor-B7WO6TWs.js">
   <link rel="stylesheet" crossorigin href="/Walter-house/assets/vendor-DV8PrLMj.css">
-  <link rel="stylesheet" crossorigin href="/Walter-house/assets/index-Ir84E4x4.css">
+  <link rel="stylesheet" crossorigin href="/Walter-house/assets/index-DX34Y60T.css">
 </head>
 <body>
 
@@ -686,6 +686,22 @@
                     <picture class="screen4__bg-img">
                         <source
                                 type="image/webp"
+                                media="(max-width: 375px)"
+                                srcset="img/screen4/screen4-photo1-375.webp" />
+                        <source
+                                type="image/webp"
+                                media="(max-width: 575px)"
+                                srcset="img/screen4/screen4-photo1-575.webp" />
+                        <source
+                                type="image/webp"
+                                media="(max-width: 768px)"
+                                srcset="img/screen4/screen4-photo1-768.webp" />
+                        <source
+                                type="image/webp"
+                                media="(max-width: 1024px)"
+                                srcset="img/screen4/screen4-photo1-1024.webp" />
+                        <source
+                                type="image/webp"
                                 media="(max-width: 1440px)"
                                 srcset="img/screen4/screen4-photo1-1440.webp" />
                         <source
@@ -693,6 +709,22 @@
                                 media="(min-width: 1441px)"
                                 srcset="img/screen4/screen4-photo1-1920.webp" />
                     
+                        <source
+                                type="image/png"
+                                media="(max-width: 375px)"
+                                srcset="img/screen4/screen4-photo1-375.png" />
+                        <source
+                                type="image/png"
+                                media="(max-width: 575px)"
+                                srcset="img/screen4/screen4-photo1-575.png" />
+                        <source
+                                type="image/png"
+                                media="(max-width: 768px)"
+                                srcset="img/screen4/screen4-photo1-768.png" />
+                        <source
+                                type="image/png"
+                                media="(max-width: 1024px)"
+                                srcset="img/screen4/screen4-photo1-1024.png" />
                         <source
                                 type="image/png"
                                 media="(max-width: 1440px)"
@@ -718,8 +750,22 @@
                     </div>
                 
                     <div class="screen4__inner">
-                      <div class="screen4__circle-container">
-                        <span class="screen4__circle"></span>
+                      <div class="screen4__circle-container stop-swiping">
+                        <svg class="screen4__circle-svg"
+                        viewBox="0 0 235 235">
+                          <circle class="screen4__slider-track"
+                                  cx="117.5"
+                                  cy="117.5"
+                                  r="116.5">
+                          </circle>
+                
+                          <circle id="circle-screen4"
+                                  class="screen4__slider-progress"
+                                  cx="117.5"
+                                  cy="117.5"
+                                  r="116.5">
+                          </circle>
+                        </svg>
                 
                         <div class="dot screen4__big-dot">
                         
@@ -745,7 +791,8 @@
                           data-info="elite">
                             i
                           </button>
-                          <p class="screen4__point-name">
+                          <p class="screen4__point-name"
+                          data-hover="elite">
                             Elite
                           </p>
                 
@@ -761,7 +808,8 @@
                                   data-info="vip">
                             i
                           </button>
-                          <p class="screen4__point-name">
+                          <p class="screen4__point-name"
+                             data-hover="vip">
                             vip
                           </p>
                 
@@ -778,7 +826,8 @@
                             i
                           </button>
                 
-                          <p class="screen4__point-name">
+                          <p class="screen4__point-name"
+                             data-hover="extra">
                             Extra
                           </p>
                 
@@ -807,12 +856,11 @@
                       </span>
                       </p>
                     </div>
-                
-                
                   </div>
                 
                   <div class="screen4__hover-container">
-                    <div class="screen4__style">
+                    <div class="screen4__style"
+                    data-info-list="elite">
                       <h4 class="screen4__style-title screen4__style-title_elite">
                         Стиль ELITE
                       </h4>
@@ -826,9 +874,39 @@
                         nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
                       </p>
                     </div>
+                
+                    <div class="screen4__style"
+                         data-info-list="vip">
+                      <h4 class="screen4__style-title screen4__style-title_elite">
+                        Стиль VIP
+                      </h4>
+                
+                      <hr>
+                
+                      <p class="screen4__style-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
+                      </p>
+                    </div>
+                
+                    <div class="screen4__style"
+                         data-info-list="extra">
+                      <h4 class="screen4__style-title screen4__style-title_elite">
+                        Стиль EXtra
+                      </h4>
+                
+                      <hr>
+                
+                      <p class="screen4__style-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
+                      </p>
+                    </div>
                   </div>
-                
-                
                 
                   <form class="form-call screen4__form">
                     <div class="form-call__wrapper">
@@ -872,6 +950,9 @@
                         <span class="main-btn__line"></span>
                       </button>  </div>
                   </form></section>
+            </div>
+
+            <div class="swiper-slide swiper-main__slide">
             </div>
         </div>
     </div>
