@@ -16,9 +16,47 @@
 <path fill="none" stroke="#ffac30" style="stroke: var(--color2, #ffac30)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3404" d="M16.851 17.532h-10.213"></path>
 <path fill="none" stroke="#ffac30" style="stroke: var(--color2, #ffac30)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3404" d="M16.851 14.468h-10.213"></path>
 </symbol>
-<symbol id="icon-icon2" viewBox="0 0 32 32">
-<path fill="#ffac30" style="fill: var(--color2, #ffac30)" d="M2.24 2.24c1.237-1.237 3.243-1.237 4.481 0l1.754 1.754-4.481 4.481-1.754-1.754c-1.237-1.237-1.237-3.243 0-4.481z"></path>
-</symbol>
+
+    <symbol id="icon-icon2" viewBox="0 0 100 100">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M85.9322 71.7901L21.2132 7.07107C17.3079 3.16582 10.9763 3.16582 7.07102 7.07107C3.16578 10.9763 3.16577 17.308 7.07102 21.2132L71.7901 85.9323"
+                  fill="none" stroke="var(--color2, #FFAC30)"/>
+            <path d="M85.8225 71.6323L93.0621 93.062L71.6324 85.8225"
+                  fill="none" stroke="var(--color2, #FFAC30)"/>
+            <path d="M7.07102 7.07107C10.9763 3.16583 17.3079 3.16583 21.2132 7.07107L26.7481 12.606L12.606 26.7481L7.07102 21.2132C3.16578 17.308 3.16578 10.9763 7.07102 7.07107Z"
+                  fill="none" stroke="var(--color2, #FFAC30)"/>
+            <path d="M16.6464 30.6464 L30.6464 16.6464"
+                  fill="none" stroke="var(--color2, #FFAC30)"/>
+            <path d="M24.7071 24 L30 29.2929"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round"/>
+            <path d="M34.7071 34 L79 78.2929"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round"/>
+            <path d="M48.5 34.6758L77.7623 5.41348C80.1055 3.07033 83.9044 3.07034 86.2476 5.41348L91.9044 11.0703C94.2476 13.4135 94.2476 17.2125 91.9044 19.5556L62.9601 48.5M48.5 62.9601L19.3848 92.0753C17.0416 94.4184 13.2426 94.4184 10.8995 92.0753L5.24264 86.4184C2.8995 84.0753 2.8995 80.2763 5.24264 77.9331L34.6758 48.5"
+                  fill="none" stroke="var(--color2, #FFAC30)"/>
+            <path d="M72.435 37.4558 L64.6568 29.6776"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M89.4057 20.4854 L81.6275 12.7072"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M78.092 31.7991 L75.2635 28.9706"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M66.7782 43.1128 L63.9498 40.2844"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M83.7487 26.1421 L80.9203 23.3137"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M37.435 73.1924 L29.6568 65.4142"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.7782 89.9292 L12.0001 82.151"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M43.092 67.5356 L40.2635 64.7072"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M25.4352 84.2725 L22.6068 81.444"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31.7782 78.8494 L28.9498 76.0209"
+                  fill="none" stroke="var(--color2, #FFAC30)" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+    </symbol>
+
 <symbol id="icon-icon3" viewBox="0 0 32 32">
 <path fill="none" stroke="#ffac30" style="stroke: var(--color2, #ffac30)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4" d="M3.8 20.803v0c-2.064 0-3.704 1.737-3.589 3.797v0c0.106 1.908 1.684 3.403 3.595 3.403h15.194"></path>
 <path fill="none" stroke="#ffac30" style="stroke: var(--color2, #ffac30)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4" d="M0.2 24.403v-18.6c0-1.988 1.612-3.6 3.6-3.6v0 18.8"></path>
