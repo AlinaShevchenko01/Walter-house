@@ -13,7 +13,7 @@
   <script type="module" crossorigin src="/Walter-house/js/index.js"></script>
   <link rel="modulepreload" crossorigin href="/Walter-house/assets/vendor-BR7ZQoNS.js">
   <link rel="stylesheet" crossorigin href="/Walter-house/assets/vendor-DV8PrLMj.css">
-  <link rel="stylesheet" crossorigin href="/Walter-house/assets/index-CLV6ZQrP.css">
+  <link rel="stylesheet" crossorigin href="/Walter-house/assets/index-Il7arfJY.css">
 </head>
 <body>
 
@@ -461,7 +461,7 @@
                           
                             <span class="main-btn__line"></span>
                           </button>
-                          <button class="main-btn screen3__btn-list white" >
+                          <button class="main-btn screen3__btn-list white" data-open-list="elite">
                             <span class="main-btn__text">
                               list of services
                             </span>
@@ -562,7 +562,7 @@
                           
                             <span class="main-btn__line"></span>
                           </button>
-                          <button class="main-btn screen3__btn-list white" >
+                          <button class="main-btn screen3__btn-list white" data-open-list="vip">
                             <span class="main-btn__text">
                               list of services
                             </span>
@@ -663,7 +663,7 @@
                           
                             <span class="main-btn__line"></span>
                           </button>
-                          <button class="main-btn screen3__btn-list white" >
+                          <button class="main-btn screen3__btn-list white" data-open-list="extra">
                             <span class="main-btn__text">
                               list of services
                             </span>
@@ -788,7 +788,7 @@
                         <div class="screen4__point screen4__point_elite"
                              data-level="elite">
                           <button class="screen4__btn-info"
-                          data-info="elite">
+                          data-open-list="elite">
                             i
                           </button>
                           <p class="screen4__point-name">
@@ -805,7 +805,7 @@
                         <div class="screen4__point screen4__point_vip"
                              data-level="vip">
                           <button class="screen4__btn-info"
-                                  data-info="vip">
+                                  data-open-list="vip">
                             i
                           </button>
                           <p class="screen4__point-name">
@@ -822,7 +822,7 @@
                         <div class="screen4__point screen4__point_extra"
                              data-level="extra">
                           <button class="screen4__btn-info"
-                                  data-info="vip">
+                                  data-open-list="extra">
                             i
                           </button>
                 
@@ -1381,12 +1381,11 @@
                             nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
                           </p>
                 
-                          <div class="screen6__cross">
-                            <span class="screen6__cross-line"></span>
-                
-                            <span class="screen6__cross-line"></span>
-                          </div>
-                        </div>
+                          <div class="cross screen6__cross">
+                            <span class="cross__line"></span>
+                          
+                            <span class="cross__line"></span>
+                          </div>        </div>
                       </div>
                 
                       <div class="screen6__item">
@@ -1439,12 +1438,11 @@
                             Help with registering the system on the security panel.
                           </p>
                 
-                          <div class="screen6__cross">
-                            <span class="screen6__cross-line"></span>
-                
-                            <span class="screen6__cross-line"></span>
-                          </div>
-                        </div>
+                          <div class="cross screen6__cross">
+                            <span class="cross__line"></span>
+                          
+                            <span class="cross__line"></span>
+                          </div>        </div>
                       </div>
                 
                       <div class="screen6__item">
@@ -1509,12 +1507,11 @@
                             nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
                           </p>
                 
-                          <div class="screen6__cross">
-                            <span class="screen6__cross-line"></span>
-                
-                            <span class="screen6__cross-line"></span>
-                          </div>
-                        </div>
+                          <div class="cross screen6__cross">
+                            <span class="cross__line"></span>
+                          
+                            <span class="cross__line"></span>
+                          </div>        </div>
                       </div>
                 
                       <div class="screen6__item">
@@ -1567,12 +1564,11 @@
                             nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
                           </p>
                 
-                          <div class="screen6__cross">
-                            <span class="screen6__cross-line"></span>
-                
-                            <span class="screen6__cross-line"></span>
-                          </div>
-                        </div>
+                          <div class="cross screen6__cross">
+                            <span class="cross__line"></span>
+                          
+                            <span class="cross__line"></span>
+                          </div>        </div>
                       </div>
                 
                       <div class="screen6__item">
@@ -1626,12 +1622,11 @@
                             nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
                           </p>
                 
-                          <div class="screen6__cross">
-                            <span class="screen6__cross-line"></span>
-                
-                            <span class="screen6__cross-line"></span>
-                          </div>
-                        </div>
+                          <div class="cross screen6__cross">
+                            <span class="cross__line"></span>
+                          
+                            <span class="cross__line"></span>
+                          </div>        </div>
                       </div>
                     </div>
                   </div>
@@ -5118,6 +5113,363 @@
               <span class="main-btn__line"></span>
             </button>  </div>
         </form>  </div>
-    </section></main>
+    </section>
+    <div class="list-of-services elite-list" data-list="elite">
+      <div class="list-of-services__wrapper">
+        <div class="list-of-services__inner">
+          <h3 class="list-of-services__title">
+            elite
+    
+            <span>
+            Стиль
+          </span>
+          </h3>
+        </div>
+    
+        <div class="list-of-services__inner">
+          <p class="list-of-services__price">
+           от 2000 грн.
+          </p>
+    
+          <hr>
+    
+          <p class="list-of-services__text">
+            В стоимость стиля
+            <span>elite</span>
+            входит весь базовый набор работ, необходимый для отличного ремонта.
+          </p>
+    
+          <div class="list-of-services__list-wrapper">
+            <ul class="list-of-services__list list-of-services__list_left">
+    
+              <li class="list-of-services__list-item">
+                Демонтаж и Возведение межкомнатных перегородок
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Выравнивание стен под маяк, финишное отделка стен под обои
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Выведение углов 90 градусов
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Электромонтажные работы (согласно проекта)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж слаботочной проводки (интернет, антенна)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж водопровода и канализации
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Гидроизоляция мокрых зон
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Заливка стяжки пола (до 10 см, пескобетон/керамзит)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Подготовка стен под поклейку обоев
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Поклейка обоев
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Укладка ламината на подложку
+              </li>
+            </ul>
+    
+            <ul class="list-of-services__list list-of-services__list_right">
+              <li class="list-of-services__list-item">
+                Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж напольного плинтуса ПВХ
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Потолок натяжной
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Установка межкомнатных дверей
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Установка ванны \ душевой кабины
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж раковины
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж лючка ревизии в стояк
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж потолка из ГКЛ
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Уборка после ремонта
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="cross list-of-services__cross">
+        <span class="cross__line"></span>
+      
+        <span class="cross__line"></span>
+      </div></div>
+    <div class="list-of-services vip-list" data-list="vip">
+      <div class="list-of-services__wrapper">
+        <div class="list-of-services__inner">
+          <h3 class="list-of-services__title">
+            vip
+    
+            <span>
+            Стиль
+          </span>
+          </h3>
+        </div>
+    
+        <div class="list-of-services__inner">
+          <p class="list-of-services__price">
+           от 3000 грн.
+          </p>
+    
+          <hr>
+    
+          <p class="list-of-services__text">
+            В стоимость стиля
+            <span>vip</span>
+            входит весь базовый набор работ, необходимый для отличного ремонта.
+          </p>
+    
+          <div class="list-of-services__list-wrapper">
+            <ul class="list-of-services__list list-of-services__list_left">
+    
+              <li class="list-of-services__list-item">
+                Демонтаж и Возведение межкомнатных перегородок
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Выравнивание стен под маяк, финишное отделка стен под обои
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Выведение углов 90 градусов
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Электромонтажные работы (согласно проекта)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж слаботочной проводки (интернет, антенна)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж водопровода и канализации
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Гидроизоляция мокрых зон
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Заливка стяжки пола (до 10 см, пескобетон/керамзит)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Подготовка стен под поклейку обоев
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Поклейка обоев
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Укладка ламината на подложку
+              </li>
+            </ul>
+    
+            <ul class="list-of-services__list list-of-services__list_right">
+              <li class="list-of-services__list-item">
+                Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж напольного плинтуса ПВХ
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Потолок натяжной
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Установка межкомнатных дверей
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Установка ванны \ душевой кабины
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж раковины
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж лючка ревизии в стояк
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж потолка из ГКЛ
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Уборка после ремонта
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="cross list-of-services__cross">
+        <span class="cross__line"></span>
+      
+        <span class="cross__line"></span>
+      </div></div>
+    <div class="list-of-services extra-list" data-list="extra">
+      <div class="list-of-services__wrapper">
+        <div class="list-of-services__inner">
+          <h3 class="list-of-services__title">
+            extra
+    
+            <span>
+            Стиль
+          </span>
+          </h3>
+        </div>
+    
+        <div class="list-of-services__inner">
+          <p class="list-of-services__price">
+           от 4000 грн.
+          </p>
+    
+          <hr>
+    
+          <p class="list-of-services__text">
+            В стоимость стиля
+            <span>extra</span>
+            входит весь базовый набор работ, необходимый для отличного ремонта.
+          </p>
+    
+          <div class="list-of-services__list-wrapper">
+            <ul class="list-of-services__list list-of-services__list_left">
+    
+              <li class="list-of-services__list-item">
+                Демонтаж и Возведение межкомнатных перегородок
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Выравнивание стен под маяк, финишное отделка стен под обои
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Выведение углов 90 градусов
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Электромонтажные работы (согласно проекта)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж слаботочной проводки (интернет, антенна)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж водопровода и канализации
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Гидроизоляция мокрых зон
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Заливка стяжки пола (до 10 см, пескобетон/керамзит)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Подготовка стен под поклейку обоев
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Поклейка обоев
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Укладка ламината на подложку
+              </li>
+            </ul>
+    
+            <ul class="list-of-services__list list-of-services__list_right">
+              <li class="list-of-services__list-item">
+                Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж напольного плинтуса ПВХ
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Потолок натяжной
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Установка межкомнатных дверей
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Установка ванны \ душевой кабины
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж раковины
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж лючка ревизии в стояк
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Монтаж потолка из ГКЛ
+              </li>
+    
+              <li class="list-of-services__list-item">
+                Уборка после ремонта
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="cross list-of-services__cross">
+        <span class="cross__line"></span>
+      
+        <span class="cross__line"></span>
+      </div></div></main>
 </body>
 </html>
