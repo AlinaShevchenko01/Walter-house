@@ -13,7 +13,7 @@
   <script type="module" crossorigin src="/Walter-house/js/index.js"></script>
   <link rel="modulepreload" crossorigin href="/Walter-house/assets/vendor-BR7ZQoNS.js">
   <link rel="stylesheet" crossorigin href="/Walter-house/assets/vendor-DV8PrLMj.css">
-  <link rel="stylesheet" crossorigin href="/Walter-house/assets/index-CT3z4jmN.css">
+  <link rel="stylesheet" crossorigin href="/Walter-house/assets/index-DrbDnYAW.css">
 </head>
 <body>
 
@@ -65,6 +65,15 @@
              height="13px">
           <use href="/Walter-house/svg/sprite.svg#icon-call"></use>
         </svg>      </button>
+
+      <button class="header__cross"
+              data-btn="request">
+        <span class="header__cross-pulse"></span>
+
+        <span class="header__cross-line"></span>
+
+        <span class="header__cross-line"></span>
+      </button>
     </div>
   </div>
 
@@ -5738,7 +5747,51 @@
             <span class="main-btn__line"></span>
           </button>    </div>
       </div>
-    </div></main>
+    </div>
+    <div class="modal-form">
+      <form class="form-call modal-form__form">
+        <div class="form-call__wrapper">
+          <div class="form-call__group">
+            <input id="name"
+                   type="text"
+                   placeholder=" ">
+      
+            <label for="name">
+              Your name
+            </label>
+      
+            <span class="form-call__error">
+          Заполните, пожалуйста, это поле.
+          </span>
+          </div>
+      
+          <div class="form-call__group">
+            <input id="phone"
+                   type="tel"
+                   placeholder=" ">
+      
+            <label for="phone">
+              Your phone number
+            </label>
+      
+            <span class="form-call__error">
+          Заполните, пожалуйста, это поле.
+          </span>
+          </div>
+      
+          <button class="main-btn form-call__btn" >
+            <span class="main-btn__text">
+              discuss a project
+            </span>
+          
+            <span class="main-btn__line"></span>
+          
+            <span class="main-btn__line"></span>
+          
+            <span class="main-btn__line"></span>
+          </button>  </div>
+      </form></div>
+</main>
 
 </body>
 </html>
